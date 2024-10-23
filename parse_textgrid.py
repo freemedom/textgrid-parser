@@ -49,7 +49,7 @@ class TextGrid(object):
         return group
 
     def _get_type(self):
-        self.file_type = self._extract_pattern(r"File type = \"(.*)\"", 2)
+        self.file_type = self._extract_pattern(r"File type = \"(.*)\"", 3)
 
     def _get_time_intval(self):
         self.xmin = self._extract_pattern(r"xmin = (.*)", 1)
